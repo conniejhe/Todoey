@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1812626722EABC090007F463 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812626622EABC090007F463 /* Item.swift */; };
+		181262B522FD36D60007F463 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181262B322FD36D60007F463 /* DataModel.xcdatamodeld */; };
+		181262B922FD51460007F463 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181262B822FD51460007F463 /* CategoryViewController.swift */; };
 		185D698922E817FD00221F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D698822E817FD00221F50 /* AppDelegate.swift */; };
 		185D698B22E817FD00221F50 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D698A22E817FD00221F50 /* ToDoListViewController.swift */; };
 		185D698E22E817FD00221F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185D698C22E817FD00221F50 /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1812626622EABC090007F463 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		181262B422FD36D60007F463 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		181262B822FD51460007F463 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Todoey/Controllers/CategoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		185D698522E817FD00221F50 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185D698822E817FD00221F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185D698A22E817FD00221F50 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		1812626822EABC0E0007F463 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				1812626622EABC090007F463 /* Item.swift */,
+				181262B322FD36D60007F463 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -48,6 +50,7 @@
 		1812626922EABC280007F463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				181262B822FD51460007F463 /* CategoryViewController.swift */,
 				185D698A22E817FD00221F50 /* ToDoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181262B922FD51460007F463 /* CategoryViewController.swift in Sources */,
 				185D698B22E817FD00221F50 /* ToDoListViewController.swift in Sources */,
-				1812626722EABC090007F463 /* Item.swift in Sources */,
+				181262B522FD36D60007F463 /* DataModel.xcdatamodeld in Sources */,
 				185D698922E817FD00221F50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU24WW9ZH9;
 				INFOPLIST_FILE = Todoey/Info.plist;
@@ -327,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conniehe.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU24WW9ZH9;
 				INFOPLIST_FILE = Todoey/Info.plist;
@@ -345,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conniehe.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +380,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		181262B322FD36D60007F463 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				181262B422FD36D60007F463 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 181262B422FD36D60007F463 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../Controllers/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 185D697D22E817FD00221F50 /* Project object */;
 }
