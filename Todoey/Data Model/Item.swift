@@ -2,14 +2,16 @@
 //  Item.swift
 //  Todoey
 //
-//  Created by Connie He on 7/25/19.
+//  Created by Connie He on 8/14/19.
 //  Copyright © 2019 Connie He. All rights reserved.
 //
 
 import Foundation
+import RealmSwift
 
-class Item {
-    
-    var Title : String = ""
-    var done : Bool = false
+class Item: Object {
+    @objc dynamic var title: String = ""
+    @objc dynamic var done: Bool = false
+    @objc dynamic var dateCreated: Date?
+    var parentCategory = LinkingObjects(fromType: Category.self, property: "items")
 }
